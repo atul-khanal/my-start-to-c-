@@ -6,6 +6,7 @@ int main()
     printf("enter the number of elements in array ");
     scanf("%d\n", &n);
     int num[n];
+    printf("enter the elements of array");
     for (int i = 0; i < n; i++)
         scanf("%d", &num[i]);
     printf("%d\n", oddheavy(num, n));
@@ -34,7 +35,8 @@ int oddheavy(int num[], int size)
             even[e] = num[i];
             e+=1;
         }
-        else{
+        else
+        {
             odd[o] = num[i];
             o+=1;
         }
