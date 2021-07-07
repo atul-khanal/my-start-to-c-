@@ -8,7 +8,7 @@ int main()
     int num[n];
     printf("enter the elements of array");
     for (int i = 0; i < n; i++)
-        scanf("%d", &num[i]);
+        scanf("%d\n", &num[i]);
     printf("%d\n", isAllPossibilities(num, n));
     return 0;
 }
