@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,m=0,var ;
+    int n,m=0,var,z ;
     printf("enter the number of element for array : ");
     scanf("%d",&n);
     int a[n] , t[n];
@@ -36,14 +36,19 @@ int main()
            
         }
     }
-    printf("the given arrey contains twin prime number and they are\n");
     for (int c=0;c<n;c++)
     {
         if (t[c]==0||t[c]==1)
             continue;
         if ((t[c+1]-t[c])==2|| (t[c+1]-t[c])==1)
+        
         {
             printf("(%d,%d)\n",t[c],t[c+1]);
+            z=1;
         }
     }
+    if (z==1)
+    printf("Are twin prime number in given array\n");
+    else 
+    printf("No twinprime number in array\n");
 }
